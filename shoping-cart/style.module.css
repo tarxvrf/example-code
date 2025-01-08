@@ -1,0 +1,16 @@
+.container{
+    @apply flex flex-col gap-10 justify-center items-center min-h-screen 
+}
+.atas{
+   @apply flex gap-5
+}
+.boxitem{
+    @apply flex flex-col gap-3 items-center border box-content w-[200px] h-[200px] rounded-lg p-3 
+    
+}
+.buttonstyle{
+    @apply flex gap-3
+}
+.button{
+    @apply bg-sky-400 text-white rounded-md px-1 
+}
