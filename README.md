@@ -1,5 +1,5 @@
-##Berisi source - code development 
+## Berisi source - code development 
 
-``bash
+```bash
 ini bisa kalian ubah-ubah codenya
-``
+```
