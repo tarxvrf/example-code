@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --my-color: #fff;
-  /* or any other variables/style */
-}
-[data-theme='dark'] {
-  --my-color: #000;
-}
-[data-theme='pink'] {
-  --my-color: #ffabc8;
+[data-theme="dark"]{
+    --bgcolor:black;
+    --textcolor:white;    
 }
 
-body {
-  background-color: var(--my-color);
+[data-theme="light"]{
+    --bgcolor:white;
+    --textcolor:black;
+}
+
+body{
+    background: var(--bgcolor);
+    color:var(--textcolor)
 }
