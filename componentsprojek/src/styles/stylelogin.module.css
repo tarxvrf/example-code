@@ -1,0 +1,16 @@
+.titlelogin{
+@apply flex justify-center card-title pb-5 lg:text-3xl
+}
+
+.inputtext{
+    @apply border rounded-md p-2
+
+}
+.imggithub{
+    @apply border bg-white rounded-full hover:-translate-y-2
+}
+
+.imggoogle{
+    @apply hover:-translate-y-2
+}
+

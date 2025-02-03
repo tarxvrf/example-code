@@ -1,0 +1,17 @@
+.titleregister{
+    @apply flex justify-center card-title pb-5 lg:text-3xl font-bold text-info
+    }
+    
+    .inputtext{
+        @apply input input-md flex flex-row items-center gap-2
+    
+    }
+    .imggithub{
+        @apply border bg-white rounded-full hover:-translate-y-2
+    }
+    
+    .imggoogle{
+        @apply hover:-translate-y-2
+    }
+    
+    
