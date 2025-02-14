@@ -24,7 +24,7 @@ const {email}= req.body
             from: process.env.SMTP_USER,            
             to: email,
             subject: "Confirmation email after SignUp ",                       
-            html:  `<p>ini adalah pengiriman email</p> link:https://demo.tulus-dev.my.id/activate/${tokenverf?.token}`
+            html:  `<p>ini adalah pengiriman email</p> link:yourdomain/activate/${tokenverf?.token}`
         }
 
         try{
