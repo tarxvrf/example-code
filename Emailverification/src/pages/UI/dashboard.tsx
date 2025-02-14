@@ -13,7 +13,7 @@ const Dashboard = () => {
   const  handlesignup= async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
     event.preventDefault()
   if((email && password !== '')){
-  const rest=  await fetch('https://demo.tulus-dev.my.id/api/hello',{
+  const rest=  await fetch('yourdomain/api/hello',{
       body: JSON.stringify({ email, password }),
       method: 'POST',
       headers:{
