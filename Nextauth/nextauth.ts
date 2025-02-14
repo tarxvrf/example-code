@@ -10,12 +10,17 @@ export default NextAuth({
                 username:{label:'Username',type:'text'},
                 password:{label:'Password',type:'password'},
             },
-            async authorize(credentials) {
-                if(credentials?.username === "admin" && credentials?.password === "admin"){
-                    return {id:1,name:"admin"};
+             async authorize(credentials){
+                if(!credentials?.email || !credentials.password){
+                    return null
                 }
-                return null;
+                const user = await prisma.user.findUnique({where:{email:credentials.email}});
+                if(!user){
+                    return null
+                }else{
+                    return user
                 }
+            }
             }
         )
      ],
